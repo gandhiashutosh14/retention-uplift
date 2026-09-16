@@ -1,0 +1,51 @@
+{
+  "metrics": {
+    "train_rows_untreated": 2531,
+    "cv_auc_raw": 0.9893026283876074,
+    "cv_brier_raw": 0.005851307378634694,
+    "cv_auc_calibrated": 0.9872397462246448,
+    "cv_brier_calibrated": 0.006532345250447508,
+    "test_auc": 0.9942215679057784,
+    "test_brier": 0.0039425515972303805,
+    "test_mean_predicted": 0.1442289224158624,
+    "test_churn_rate": 0.1424287856071964
+  },
+  "calibration": [
+    {
+      "bin": "0.0-0.1",
+      "n": 569,
+      "mean_predicted": 0.003853666047400975,
+      "observed": 0.0035149384885764497
+    },
+    {
+      "bin": "0.2-0.3",
+      "n": 4,
+      "mean_predicted": 0.2444047152185152,
+      "observed": 0.0
+    },
+    {
+      "bin": "0.5-0.6",
+      "n": 1,
+      "mean_predicted": 0.5459827774268755,
+      "observed": 0.0
+    },
+    {
+      "bin": "0.7-0.8",
+      "n": 1,
+      "mean_predicted": 0.7889959849743764,
+      "observed": 1.0
+    },
+    {
+      "bin": "0.8-0.9",
+      "n": 1,
+      "mean_predicted": 0.8259370883587984,
+      "observed": 1.0
+    },
+    {
+      "bin": "0.9-1.0",
+      "n": 91,
+      "mean_predicted": 0.9985650610854393,
+      "observed": 1.0
+    }
+  ]
+}

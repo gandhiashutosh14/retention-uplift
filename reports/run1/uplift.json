@@ -1,0 +1,80 @@
+{
+  "segments": [
+    {
+      "segment": "churn_intent/negative",
+      "n": 218,
+      "n_treated": 15,
+      "churn_control": 1.0,
+      "churn_treated": 1.0,
+      "clv_mean": 873.9352293577982,
+      "naive_uplift": 0.0,
+      "uplift_ci_low": -0.01857266623348508,
+      "uplift_ci_high": 0.20388926630434767
+    },
+    {
+      "segment": "customer_support/negative",
+      "n": 123,
+      "n_treated": 0,
+      "churn_control": 0.4146341463414634,
+      "churn_treated": null,
+      "clv_mean": 716.9531707317074
+    },
+    {
+      "segment": "pricing/negative",
+      "n": 86,
+      "n_treated": 0,
+      "churn_control": 0.3372093023255814,
+      "churn_treated": null,
+      "clv_mean": 733.5439534883722
+    },
+    {
+      "segment": "pricing/neutral",
+      "n": 718,
+      "n_treated": 91,
+      "churn_control": 0.12440191387559808,
+      "churn_treated": 0.13186813186813187,
+      "clv_mean": 1182.1623676880224,
+      "naive_uplift": -0.0074662179925337885,
+      "uplift_ci_low": -0.11565583816870759,
+      "uplift_ci_high": 0.0754752376746867
+    },
+    {
+      "segment": "service_quality/positive",
+      "n": 1521,
+      "n_treated": 29,
+      "churn_control": 0.0,
+      "churn_treated": 0.0,
+      "clv_mean": 552.1795266272189,
+      "naive_uplift": 0.0,
+      "uplift_ci_low": -0.11697359446555587,
+      "uplift_ci_high": 0.002568186364117698
+    }
+  ],
+  "common_support_segments": [
+    "pricing/neutral"
+  ],
+  "ipw": {
+    "rows": 718,
+    "treated": 91,
+    "ate_churn_reduction": 0.011033704651803491,
+    "ci_low": -0.05676912176030187,
+    "ci_high": 0.07762551028739488,
+    "propensity_range": [
+      0.02,
+      0.42847819631995987
+    ]
+  },
+  "t_learner": {
+    "rows": 718,
+    "tau_mean": -0.008899362690950981,
+    "tau_p10": -0.14455744350295005,
+    "tau_p90": 0.39781081345009656,
+    "qini": -0.029827139783666187,
+    "share_positive": 0.1309192200557103
+  },
+  "class_transformation": {
+    "qini": 0.03004422120767011,
+    "share_positive": 0.11838440111420613
+  },
+  "conclusion": "Within the 718 customers in segments where the discount was tried on people who could go either way (pricing/neutral), the IPW-adjusted churn reduction is +0.011 with a 95% bootstrap interval [-0.057, +0.078]. The interval includes zero: the data does not demonstrate that the discount saves anyone. Out-of-fold normalised Qini coefficients: T-learner -0.030, class transformation +0.030 (zero is random ordering, one is perfect). The policy therefore treats the save rate as a scenario parameter and the campaign as the experiment that measures it."
+}

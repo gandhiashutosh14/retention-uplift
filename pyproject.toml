@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retention-uplift"
+version = "0.1.0"
+description = "Budget-constrained retention targeting: calibrated churn risk, honest uplift bounds, a knapsack policy across save-rate scenarios, and a governed pipeline with a critic."
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["pandas>=2.0", "numpy>=1.24", "scikit-learn>=1.4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+retention = "retention_uplift.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["retention_uplift*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

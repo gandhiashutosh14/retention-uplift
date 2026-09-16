@@ -1,0 +1,62 @@
+[
+  {
+    "save_rate": 0.1,
+    "offers": 40,
+    "spend": 800.0,
+    "expected_net_gain": 3798.4158047875735,
+    "expected_value_saved": 4598.4158047875735,
+    "segments": {
+      "pricing/neutral": 31,
+      "pricing/negative": 5,
+      "customer_support/negative": 4
+    }
+  },
+  {
+    "save_rate": 0.2,
+    "offers": 49,
+    "spend": 980.0,
+    "expected_net_gain": 8487.383205309834,
+    "expected_value_saved": 9467.383205309834,
+    "segments": {
+      "pricing/neutral": 31,
+      "customer_support/negative": 13,
+      "pricing/negative": 5
+    }
+  },
+  {
+    "save_rate": 0.3,
+    "offers": 50,
+    "spend": 1000.0,
+    "expected_net_gain": 13223.19123603625,
+    "expected_value_saved": 14223.19123603625,
+    "segments": {
+      "pricing/neutral": 31,
+      "customer_support/negative": 13,
+      "pricing/negative": 6
+    }
+  },
+  {
+    "save_rate": 0.5,
+    "offers": 50,
+    "spend": 1000.0,
+    "expected_net_gain": 22705.31872672708,
+    "expected_value_saved": 23705.31872672708,
+    "segments": {
+      "pricing/neutral": 31,
+      "customer_support/negative": 13,
+      "pricing/negative": 6
+    }
+  },
+  {
+    "save_rate": 1.0,
+    "offers": 50,
+    "spend": 1000.0,
+    "expected_net_gain": 46410.63745345416,
+    "expected_value_saved": 47410.63745345416,
+    "segments": {
+      "pricing/neutral": 31,
+      "customer_support/negative": 13,
+      "pricing/negative": 6
+    }
+  }
+]
